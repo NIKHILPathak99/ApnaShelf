@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ApnaSelf — A Literary Publishing House</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ===== LOADER ===== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-quill">✒</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p class="loader-text">Opening the pages...</p>
+    </div>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo" data-link="home">Apna<span>Self</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link active" data-link="home">Home</a></li>
+      <li><a href="#publish" class="nav-link" data-link="publish">Publish</a></li>
+      <li><a href="#sessions" class="nav-link" data-link="sessions">Sessions</a></li>
+      <li><a href="#library" class="nav-link" data-link="library">Library</a></li>
+      <li><a href="#about" class="nav-link" data-link="about">About</a></li>
+      <li><a href="#contact" class="nav-link" data-link="contact">Contact</a></li>
+    </ul>
+    <a href="#publish" class="nav-cta">Begin Writing</a>
+  </nav>
+
+  <!-- ===== MOBILE MENU OVERLAY ===== -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul class="mobile-menu">
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#publish" class="mobile-link">Publish</a></li>
+      <li><a href="#sessions" class="mobile-link">Sessions</a></li>
+      <li><a href="#library" class="mobile-link">Library</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- ==============================
+         SECTION 1: HERO
+    =============================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="hero-grain"></div>
+        <div class="hero-radial"></div>
+        <div class="floating-text-bg">
+          <span>prose</span><span>verse</span><span>memoir</span>
+          <span>narrative</span><span>fiction</span><span>poetry</span>
+          <span>story</span><span>draft</span><span>manuscript</span>
+        </div>
+      </div>
+      <div class="hero-content reveal">
+        <p class="hero-eyebrow">✦ A Haven for the Written Word ✦</p>
+        <h1 class="hero-title">
+          Where Stories<br><em>Find Their</em><br>Voice
+        </h1>
+        <div class="hero-rule">
+          <span class="rule-line"></span>
+          <span class="rule-diamond">◆</span>
+          <span class="rule-line"></span>
+        </div>
+        <p class="hero-sub">
+          Publish your manuscripts. Discover your craft.<br>
+          Join a community that believes every word is sacred.
+        </p>
+        <div class="hero-btns">
+          <a href="#publish" class="btn btn-gold">Publish Your Work</a>
+          <a href="#sessions" class="btn btn-outline">Learn to Write</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         STATS STRIP
+    =============================== -->
+    <div class="stats-strip reveal">
+      <div class="stat-item">
+        <span class="stat-num" data-count="4200">0</span><span class="stat-plus">+</span>
+        <p class="stat-label">Works Published</p>
+      </div>
+      <div class="stat-divider">◆</div>
+      <div class="stat-item">
+        <span class="stat-num" data-count="850">0</span><span class="stat-plus">+</span>
+        <p class="stat-label">Authors</p>
+      </div>
+      <div class="stat-divider">◆</div>
+      <div class="stat-item">
+        <span class="stat-num" data-count="120">0</span><span class="stat-plus">+</span>
+        <p class="stat-label">Sessions Held</p>
+      </div>
+      <div class="stat-divider">◆</div>
+      <div class="stat-item">
+        <span class="stat-num" data-count="38">0</span>
+        <p class="stat-label">Literary Mentors</p>
+      </div>
+    </div>
+
+            <!-- ==============================
+         SECTION 2:   FAMOUS QUOTES
+    =============================== -->
+    <section class="section quotes-section">
+      <div class="quote-carosoul" >
+        <div class="quote-card">
+           <div class="quote-image">
+                  <img src="./assets/penIcon.webp" alt="pen_icon">
+           </div>
+            <div>
+               <p class="quote">"Itna Kyu Sikha Rhi Hai Zindagi Humain, Kaunsa Sadiyan Gujarni Hai."</p>
+                <p class="author">- Gulzar</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         SECTION 3: LIBRARY / FEATURED WORKS
+    =============================== -->
+    <section class="section library-section" id="library">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Our Collection</span>
+          <h2 class="section-title">Recently <em>Published</em> Works</h2>
+          <p class="section-desc">Browse manuscripts by writers from across the country. Every story here was born from courage.</p>
+        </div>
+        <div class="genre-filter reveal">
+          <button class="filter-btn active" data-filter="all">All Genres</button>
+          <button class="filter-btn" data-filter="fiction">Fiction</button>
+          <button class="filter-btn" data-filter="poetry">Poetry</button>
+          <button class="filter-btn" data-filter="nonfiction">Non-Fiction</button>
+          <button class="filter-btn" data-filter="stories">Short Stories</button>
+        </div>
+        <div class="books-grid">
+          <div class="book-card reveal" data-genre="fiction">
+            <div class="book-cover cover-amber">
+              <div class="cover-lines"></div>
+              <div class="cover-frame"></div>
+              <div class="cover-info">
+                <span class="cover-genre">Literary Fiction</span>
+                <h4 class="cover-title">The Last Letter of a Forgotten Town</h4>
+                <p class="cover-author">— Aanya Mehra</p>
+              </div>
+            </div>
+            <div class="book-hover">
+              <p>A sweeping tale of memory, loss, and the letters we never send to those we love most.</p>
+              <a href="#" class="btn btn-gold btn-sm">Read Now</a>
+            </div>
+          </div>
+          <div class="book-card reveal" data-genre="nonfiction">
+            <div class="book-cover cover-blue">
+              <div class="cover-lines"></div>
+              <div class="cover-frame"></div>
+              <div class="cover-info">
+                <span class="cover-genre">Historical</span>
+                <h4 class="cover-title">Salt &amp; Saffron: A Merchant's Diary</h4>
+                <p class="cover-author">— Rohan Verma</p>
+              </div>
+            </div>
+            <div class="book-hover">
+              <p>A vivid account of trade, culture, and survival along the ancient spice routes of India.</p>
+              <a href="#" class="btn btn-gold btn-sm">Read Now</a>
+            </div>
+          </div>
+          <div class="book-card reveal" data-genre="poetry">
+            <div class="book-cover cover-purple">
+              <div class="cover-lines"></div>
+              <div class="cover-frame"></div>
+              <div class="cover-info">
+                <span class="cover-genre">Poetry Collection</span>
+                <h4 class="cover-title">Monsoon Verses &amp; Borrowed Light</h4>
+                <p class="cover-author">— Priya Nair</p>
+              </div>
+            </div>
+            <div class="book-hover">
+              <p>Lyrical poetry that moves between seasons, silence, and the spaces between words.</p>
+              <a href="#" class="btn btn-gold btn-sm">Read Now</a>
+            </div>
+          </div>
+          <div class="book-card reveal" data-genre="stories">
+            <div class="book-cover cover-green">
+              <div class="cover-lines"></div>
+              <div class="cover-frame"></div>
+              <div class="cover-info">
+                <span class="cover-genre">Short Stories</span>
+                <h4 class="cover-title">Seven Evenings in Varanasi</h4>
+                <p class="cover-author">— Kabir Joshi</p>
+              </div>
+            </div>
+            <div class="book-hover">
+              <p>Seven interconnected stories set along the ghats, where life and death share the same riverbank.</p>
+              <a href="#" class="btn btn-gold btn-sm">Read Now</a>
+            </div>
+          </div>
+          <div class="book-card reveal" data-genre="fiction">
+            <div class="book-cover cover-red">
+              <div class="cover-lines"></div>
+              <div class="cover-frame"></div>
+              <div class="cover-info">
+                <span class="cover-genre">Contemporary Fiction</span>
+                <h4 class="cover-title">The Cartographer's Daughter</h4>
+                <p class="cover-author">— Meera Shah</p>
+              </div>
+            </div>
+            <div class="book-hover">
+              <p>A young woman retraces her father's maps and discovers a family history of silence and secrets.</p>
+              <a href="#" class="btn btn-gold btn-sm">Read Now</a>
+            </div>
+          </div>
+          <div class="book-card reveal" data-genre="nonfiction">
+            <div class="book-cover cover-teal">
+              <div class="cover-lines"></div>
+              <div class="cover-frame"></div>
+              <div class="cover-info">
+                <span class="cover-genre">Essays</span>
+                <h4 class="cover-title">Notes from the Margin</h4>
+                <p class="cover-author">— Disha Rao</p>
+              </div>
+            </div>
+            <div class="book-hover">
+              <p>A collection of personal essays on identity, language, and what it means to write in translation.</p>
+              <a href="#" class="btn btn-gold btn-sm">Read Now</a>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================
+         SECTION 4: TESTIMONIALS
+    =============================== -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Voices</span>
+          <h2 class="section-title">What Our <em>Authors</em> Say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="quote-open">"</div>
+            <p class="quote-text">Inkwell gave my manuscript the home it deserved. The publishing process was smooth, dignified, and my work was treated with genuine reverence.</p>
+            <div class="quote-author-info">
+              <div class="author-avatar">SK</div>
+              <div>
+                <p class="author-name">Sunita Krishnaswamy</p>
+                <p class="author-role">Debut Novelist, 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="quote-open">"</div>
+            <p class="quote-text">The writing sessions transformed me from a hesitant blogger into a confident author. My mentor understood my voice and helped me find my story.</p>
+            <div class="quote-author-info">
+              <div class="author-avatar">FS</div>
+              <div>
+                <p class="author-name">Farhan Siddiqui</p>
+                <p class="author-role">Short Story Writer</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="quote-open">"</div>
+            <p class="quote-text">I was terrified to share my poetry. Inkwell's community was warm, encouraging, and deeply literary. I've found my readers here.</p>
+            <div class="quote-author-info">
+              <div class="author-avatar">LM</div>
+              <div>
+                <p class="author-name">Lata Murthy</p>
+                <p class="author-role">Poet, Published 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         SECTION 5: ABOUT
+    =============================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="two-col about-col">
+          <div class="about-visual reveal">
+            <div class="about-circle">
+              <div class="circle-ring r1"></div>
+              <div class="circle-ring r2"></div>
+              <div class="circle-ring r3"></div>
+              <div class="circle-center">✒</div>
+            </div>
+            <div class="about-words">
+              <span class="aw w1">prose</span>
+              <span class="aw w2">narrative</span>
+              <span class="aw w3">verse</span>
+              <span class="aw w4">memoir</span>
+              <span class="aw w5">story</span>
+            </div>
+          </div>
+          <div class="col-text reveal">
+            <span class="section-eyebrow">Our Story</span>
+            <h2 class="section-title">Born from a<br>Love of <em>Words</em></h2>
+            <p class="section-body">
+              ApnaShelf was created with a simple intention — to build a quiet corner on the internet where stories can live and grow. In a world that often feels fast and overwhelming, we wanted to create a small digital library where readers can pause, explore thoughtful stories, and writers can find a welcoming place for their words.
+            </p>
+            <p class="section-body">
+              At ApnaShelf, we believe that every story deserves a shelf. Our platform is designed to support emerging writers through guidance, creative services, and a nurturing publishing space, while offering readers a calm environment to discover fresh, contemporary voices.
+            </p>
+
+           
+            <div class="values-list">
+               <h3 class="value-heading">What We Stand For</h3>
+              <div class="value-item">
+                <span class="value-icon">◆</span>
+                <div>
+                  <strong>A Shelf for Every Voice</strong>
+                  <p>We support new writers with the guidance and tools they need to shape, publish, and share their stories with the world.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-icon">◆</span>
+                <div>
+                  <strong>A Peaceful Reading Space</strong>
+                  <p>ApnaShelf offers readers a calm digital library where meaningful stories can be discovered and enjoyed at a gentle pace.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-icon">◆</span>
+                <div>
+                  <strong>A Growing Literary Community</strong>
+                  <p>Through features, reader interaction, and writer support, we aim to build a small but vibrant community where stories, writers, and readers grow together.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+            <!-- ==============================
+         CTA BANNER
+    =============================== -->
+    <section class="cta-banner reveal">
+      <div class="cta-inner">
+        <p class="cta-ornament">— ✦ —</p>
+        <h2 class="cta-title">Your Story is <em>Waiting<br>to Be Written</em></h2>
+        <p class="cta-sub">Join thousands of writers who found their voice, their readers, and their courage at Inkwell.</p>
+        <div class="hero-btns">
+          <a href="#publish" class="btn btn-gold">Publish Your Work</a>
+          <a href="#sessions" class="btn btn-outline">Find a Mentor</a>
+        </div>
+        <p class="cta-ornament">— ✦ —</p>
+      </div>
+    </section>
+
+        <!-- ==============================
+         SECTION 6: PUBLISH
+    =============================== -->
+    <section class="section publish-section" id="publish">
+      <div class="container">
+        <div class="two-col">
+          <div class="col-text reveal">
+            <span class="section-eyebrow">For Authors</span>
+            <h2 class="section-title">Share Your <em>Manuscript</em><br>With the World</h2>
+            <p class="section-body">
+              Whether it's a novel, short story, essay, or poetry collection — Inkwell gives your writing a dignified home. We handle the presentation; you provide the soul.
+            </p>
+            <ul class="feature-list">
+              <li>Upload your PDF manuscript with a single click</li>
+              <li>Choose genre, audience, and visibility settings</li>
+              <li>Receive feedback from our literary community</li>
+              <li>Track reads, shares, and reader engagement</li>
+              <li>Apply for featured placement on the homepage</li>
+            </ul>
+            <a href="#contact" class="btn btn-gold">Start Publishing</a>
+          </div>
+          <div class="col-visual reveal">
+            <div class="upload-zone" id="uploadZone">
+              <div class="upload-corner tl"></div>
+              <div class="upload-corner tr"></div>
+              <div class="upload-corner bl"></div>
+              <div class="upload-corner br"></div>
+              <div class="upload-icon">📄</div>
+              <h3 class="upload-title">Upload Your Manuscript</h3>
+              <p class="upload-sub">Drag & drop your PDF here, or click to browse.<br>We accept manuscripts of any length.</p>
+              <label class="btn btn-outline upload-label">
+                <input type="file" accept=".pdf" id="fileInput" hidden />
+                Choose File
+              </label>
+              <div class="file-tags">
+                <span>PDF</span><span>Up to 50MB</span><span>All Genres</span>
+              </div>
+            </div>
+            <div class="checklist-box">
+              <p class="checklist-title">Publishing Checklist</p>
+              <label class="check-item"><input type="checkbox" /> Manuscript is complete &amp; proofread</label>
+              <label class="check-item"><input type="checkbox" /> Cover page with title &amp; author name</label>
+              <label class="check-item"><input type="checkbox" /> Genre &amp; brief synopsis ready</label>
+              <label class="check-item"><input type="checkbox" /> Author bio written</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+        <!-- ==============================
+         SECTION 7: SESSIONS
+    =============================== -->
+    <section class="section sessions-section" id="sessions">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">For Learners</span>
+          <h2 class="section-title">Learn the <em>Art of Writing</em></h2>
+          <p class="section-desc">Every great author started somewhere. Our mentors guide you from your first sentence to your final draft.</p>
+        </div>
+        <div class="sessions-grid">
+          <div class="session-card reveal" data-delay="0">
+            <div class="session-top">
+              <span class="session-icon">🌱</span>
+              <span class="session-level beginner">Beginner</span>
+            </div>
+            <h3 class="session-name">Finding Your Voice</h3>
+            <p class="session-desc-card">For complete beginners. Learn the fundamentals of storytelling, discover your unique writing style, and complete your first piece.</p>
+            <ul class="session-includes">
+              <li>4 one-on-one sessions</li>
+              <li>Weekly writing prompts</li>
+              <li>First draft review</li>
+            </ul>
+            <div class="session-footer">
+              <p class="session-price">₹999 <span>/ session</span></p>
+              <a href="#contact" class="btn btn-ghost">Book Now</a>
+            </div>
+          </div>
+          <div class="session-card featured reveal" data-delay="100">
+            <div class="featured-ribbon">Most Popular</div>
+            <div class="session-top">
+              <span class="session-icon">✍️</span>
+              <span class="session-level intermediate">Intermediate</span>
+            </div>
+            <h3 class="session-name">Craft &amp; Structure</h3>
+            <p class="session-desc-card">Deepen your writing. Master narrative arc, character depth, pacing, and the art of showing rather than telling.</p>
+            <ul class="session-includes">
+              <li>6 guided sessions</li>
+              <li>Full chapter critique</li>
+              <li>Published author feedback</li>
+            </ul>
+            <div class="session-footer">
+              <p class="session-price">₹1,799 <span>/ session</span></p>
+              <a href="#contact" class="btn btn-gold">Book Now</a>
+            </div>
+          </div>
+          <div class="session-card reveal" data-delay="200">
+            <div class="session-top">
+              <span class="session-icon">🏛️</span>
+              <span class="session-level advanced">Advanced</span>
+            </div>
+            <h3 class="session-name">Manuscript to Publication</h3>
+            <p class="session-desc-card">For writers ready to publish. Refine your full manuscript with one-on-one editorial guidance from a published author.</p>
+            <ul class="session-includes">
+              <li>8 intensive sessions</li>
+              <li>Full manuscript review</li>
+              <li>Publishing strategy plan</li>
+            </ul>
+            <div class="session-footer">
+              <p class="session-price">₹3,499 <span>/ session</span></p>
+              <a href="#contact" class="btn btn-ghost">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="discovery-box reveal">
+          <h3>Not sure where to start?</h3>
+          <p>Book a free 20-minute discovery call with one of our mentors.</p>
+          <a href="#contact" class="btn btn-gold">Book Free Call</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         SECTION 8: CONTACT
+    =============================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Get in Touch</span>
+          <h2 class="section-title">Begin Your <em>Journey</em></h2>
+          <p class="section-desc">Whether you want to publish, learn, or just say hello — we'd love to hear from you.</p>
+        </div>
+        <div class="contact-wrap">
+          <div class="contact-info reveal">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Visit Us</strong>
+                <p>Literary House, Connaught Place<br>New Delhi — 110001</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <strong>Write to Us</strong>
+                <p>hello@inkwell.in<br>submissions@inkwell.in</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Call Us</strong>
+                <p>+91 98765 43210<br>Mon–Sat, 10am – 6pm</p>
+              </div>
+            </div>
+            <div class="contact-quote">
+              <p>"Every great story begins with the courage to write the first word."</p>
+            </div>
+          </div>
+          <div class="contact-form-box reveal">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Your Name</label>
+                  <input type="text" placeholder="Aanya Mehra" required />
+                </div>
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input type="email" placeholder="aanya@email.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>I'm interested in...</label>
+                <select>
+                  <option value="">Select a purpose</option>
+                  <option>Publishing my manuscript</option>
+                  <option>Beginner writing session</option>
+                  <option>Intermediate writing session</option>
+                  <option>Advanced / manuscript editing</option>
+                  <option>Free discovery call</option>
+                  <option>General enquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Your Message</label>
+                <textarea rows="5" placeholder="Tell us about your writing, your goals, or your manuscript..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-gold btn-full">Send Message</button>
+              <p class="form-note">We reply within 24 hours. No spam, ever.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo footer-logo">INK<span>well</span></a>
+          <p class="footer-tagline">"A literary home for every voice that dares to be heard."</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link">Tw</a>
+            <a href="#" class="social-link">Ig</a>
+            <a href="#" class="social-link">Li</a>
+            <a href="#" class="social-link">Fb</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Publish</h4>
+          <ul>
+            <li><a href="#">Upload Manuscript</a></li>
+            <li><a href="#">Submission Guidelines</a></li>
+            <li><a href="#">Author Dashboard</a></li>
+            <li><a href="#">Featured Works</a></li>
+            <li><a href="#">Copyright Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="#">All Sessions</a></li>
+            <li><a href="#">Our Mentors</a></li>
+            <li><a href="#">Writing Workshops</a></li>
+            <li><a href="#">Free Resources</a></li>
+            <li><a href="#">Writing Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Literary Community</a></li>
+            <li><a href="#">Press & Media</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Inkwell Publishing House. All rights reserved.</p>
+        <p class="footer-italic">For the love of words.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
