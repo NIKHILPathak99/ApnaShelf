@@ -349,3 +349,36 @@ document.addEventListener('DOMContentLoaded', () => {
     card.dataset.delay = i * 80;
   });
 });
+
+
+// const cards = document.querySelectorAll('.quote-card');
+// let current = 0;
+
+// function showNext() {
+//   cards[current].classList.remove('active');
+//   current = (current + 1) % cards.length;
+//   cards[current].classList.add('active');
+// }
+
+// setInterval(showNext, 4000);
+const cards = document.querySelectorAll('.quote-card');
+let current = 0;
+
+function showNext() {
+  const prev = current;
+  current = (current + 1) % cards.length;
+
+  // Purani card left mein exit karti hai
+  cards[prev].classList.remove('active');
+  cards[prev].classList.add('exit');
+
+  // Nayi card right se aati hai
+  cards[current].classList.add('active');
+
+  // Exit class cleanup after animation
+  setTimeout(() => {
+    cards[prev].classList.remove('exit');
+  }, 600);
+}
+
+setInterval(showNext, 8000);
