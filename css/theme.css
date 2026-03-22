@@ -1,0 +1,22 @@
+:root {
+  --ink:        #120e08;
+  --ink-light:  #1e1710;
+  --parchment:  #f4eed9;
+  --cream:      #faf7f0;
+  --gold:       #c9a84c;
+  --gold-light: #e8cc80;
+  --gold-dim:   rgba(201,168,76,0.18);
+  --gold-line:  rgba(201,168,76,0.25);
+  --muted:      #8a7f6e;
+  --muted-dark: #5a5248;
+  --text-body:  rgba(244,238,217,0.75);
+  --text-main:  #f4eed9;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Crimson Pro', Georgia, serif;
+  --font-accent:  'EB Garamond', Georgia, serif;
+
+  --nav-h: 78px;
+  --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --radius: 2px;
+}
